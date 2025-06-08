@@ -1,0 +1,246 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3cc96f;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
+  font-family: "Traditional Arabic";
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#arabic-text {
+  font-weight: 700;
+}
+
+#arabic-text {
+  text-align: right;
+}
+
+.container {
+  max-width: 90%;
+  min-height: 85%;
+  margin: 40px auto;
+  background: #eae86f;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.1);
+  padding: 14px;
+  position: relative;
+}
+
+#randomize-container {
+  position: absolute;
+  top: 0;
+  left: 4.4%;
+  width: 100%;
+  transition: visibility 0.3s;
+}
+
+#question-container {
+  position: absolute;
+  top: 0;
+  left: 3%;
+  width: 100%;
+  transition: visibility 0.3s;
+  padding: 30px;
+  padding-bottom: 0px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+h1 {
+  text-align: center;
+  color: #234567;
+  letter-spacing: 1px;
+}
+
+.lists-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.users-container {
+  width: 80%;
+}
+
+.users-container h2 {
+  margin-bottom: 8px;
+  color: #33495e;
+  font-size: 1.05em;
+}
+
+.users-container ul {
+  /* border: 2px solid black; */
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.questions-container {
+  width: 18%;
+}
+
+.questions-container h2 {
+  margin-bottom: 8px;
+  color: #33495e;
+  font-size: 1.05em;
+}
+
+.questions-container ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+#question-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#question-numbers li {
+  background: #fff;
+  border-radius: 10px;
+  font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 61px;
+  width: 61px;
+  border: 2px solid transparent; /* default border */
+  transition: border-color 0.18s;
+}
+
+#user-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#user-numbers li {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 7px;
+  padding: 8px 12px;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  height: 38px;
+  width: 290px;
+  border: 2px solid transparent; /* default border */
+  transition: border-color 0.18s;
+}
+
+.users-container .number {
+  display: inline-block;
+  background: #3384ef;
+  color: #fff;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  margin-right: 12px;
+  font-weight: bold;
+  font-size: 1em;
+}
+.users-container li.selected,
+.questions-container li.selected {
+  border: 5px solid #f0bc00 !important;
+  box-shadow: 0 6px 32px #f0bc00;
+  background: #e6f9ea;
+}
+
+.questions-container .number {
+  display: flex;
+  background: #3384ef;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 26px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1em;
+}
+.picked-user,
+.picked-question {
+  margin-left: 8px;
+  font-weight: 500;
+  color: #3384ef;
+  font-size: 1em;
+  transition: color 0.18s;
+}
+
+.buttons {
+  display: block;
+  position: absolute; /* Change this */
+  bottom: 20px; /* Change this */
+  left: 50%; /* Add this */
+  transform: translateX(-50%); /* Add this */
+  justify-content: center;
+  gap: 18px;
+}
+
+button {
+  padding: 13px 32px;
+  background: #3384ef;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s, opacity 0.2s;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  background: #2363b9;
+}
+
+#delete-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 15px;
+}
+
+.result {
+  margin-top: 28px;
+  background: #f0f4fa;
+  border-radius: 10px;
+  padding: 19px 14px;
+  font-size: 1.2em;
+  text-align: center;
+  color: #222b38;
+}
+
+.result span {
+  color: #3384ef;
+  font-size: 1.3em;
+  font-weight: 600;
+}

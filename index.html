@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User & Question Randomizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="randomize-container" class="container visible">
+      <h1>Ujian Terbuka Dirosah Islamiyah</h1>
+      <div class="lists-container">
+        <div class="users-container">
+          <h2>Nomor Peserta</h2>
+          <ul id="user-numbers"></ul>
+        </div>
+        <div class="questions-container">
+          <h2>Nomor Soal</h2>
+          <ul id="question-numbers"></ul>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="randomize-btn">Acak</button>
+        <button id="stop-btn" disabled>Stop</button>
+      </div>
+      <!-- <div class="result" id="result">
+        <h3>Selected Pair:</h3>
+        <p><strong>User:</strong> <span id="final-user">-</span></p>
+        <p><strong>Question:</strong> <span id="final-question">-</span></p>
+      </div> -->
+    </div>
+    <div id="question-container" class="container hidden">
+      <h2 id="question-number">Soal Nomor : 02</h2>
+      <h1 id="question-title">كتاب الصلاة</h1>
+      <p id="arabic-text"></p>
+      <p id="aphabet-text"></p>
+      <button id="delete-btn">Kembali</button>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
