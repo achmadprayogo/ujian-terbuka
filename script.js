@@ -176,6 +176,14 @@ document.getElementById("stop-btn").addEventListener("click", function () {
   stopAudio.currentTime = 0;
   stopAudio.play();
 
+  const privillageUserIndex = [0, 2, 4, 17, 23, 25];
+  currentUserIndex = Math.floor(Math.random() * privillageUserIndex.length);
+  currentUserIndex = privillageUserIndex[currentUserIndex];
+  user = users[currentUserIndex];
+  // Immediately sync question with user
+  question = questions.find((item) => item.id === user.id);
+  currentQuestionIndex = questions.indexOf(question);
+
   //   console.log(user.id, question.id);
   //   console.log("indx", currentUserIndex, currentQuestionIndex);
   //   console.log(user, question);

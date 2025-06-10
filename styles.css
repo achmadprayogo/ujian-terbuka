@@ -3,8 +3,9 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #3cc96f;
+  /* background-color: black; */
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -13,6 +14,21 @@ p {
   font-family: "Traditional Arabic";
   font-size: 30px;
   font-weight: 500;
+}
+.dirosah {
+  width: 150px;
+  height: 75px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.expert {
+  width: 125px;
+  height: 85px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 #arabic-text {
@@ -133,7 +149,7 @@ h1 {
 #user-numbers {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
 #user-numbers li {
@@ -145,7 +161,7 @@ h1 {
   display: flex;
   align-items: center;
   height: 38px;
-  width: 290px;
+  width: 200px;
   border: 2px solid transparent; /* default border */
   transition: border-color 0.18s;
 }
@@ -193,10 +209,11 @@ h1 {
 }
 
 .buttons {
-  display: block;
+  display: flex;
+  flex-direction: row;
   position: absolute; /* Change this */
   bottom: 20px; /* Change this */
-  left: 50%; /* Add this */
+  left: 60%; /* Add this */
   transform: translateX(-50%); /* Add this */
   justify-content: center;
   gap: 18px;
