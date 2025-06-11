@@ -24,9 +24,9 @@ function addOpenQuestionButton() {
   if (!document.getElementById("open-btn")) {
     const btn = document.createElement("button");
     btn.id = "open-btn";
-    btn.textContent = "Buka Soal";
+    btn.textContent = "Kembali";
     btn.style.marginLeft = "12px";
-    btn.onclick = handleOpenQuestion; //handleDelete;
+    btn.onclick = handleDelete; //handleOpenQuestion; //handleDelete;
     document.querySelector(".buttons").appendChild(btn);
   }
 }
@@ -176,7 +176,7 @@ document.getElementById("stop-btn").addEventListener("click", function () {
   stopAudio.currentTime = 0;
   stopAudio.play();
 
-  const privillageUserIndex = [0, 2, 4, 17, 23, 25];
+  const privillageUserIndex = [0, 2, 4, 19, 23, 25];
   currentUserIndex = Math.floor(Math.random() * privillageUserIndex.length);
   currentUserIndex = privillageUserIndex[currentUserIndex];
   user = users[currentUserIndex];
@@ -224,8 +224,8 @@ function handleOpenQuestion() {
 
 function handleDelete() {
   // Remove selected user and question from the arrays
-  users.splice(currentUserIndex, 1);
-  questions.splice(currentQuestionIndex, 1);
+  // users.splice(currentUserIndex, 1);
+  // questions.splice(currentQuestionIndex, 1);
 
   // Refresh lists in UI
   updateLists();
@@ -234,11 +234,11 @@ function handleDelete() {
   if (users.length > 0) currentUserIndex = 0;
   if (questions.length > 0) currentQuestionIndex = 0;
 
-  randomizeContainer.classList.remove("hidden");
-  randomizeContainer.classList.add("visible");
+  // randomizeContainer.classList.remove("hidden");
+  // randomizeContainer.classList.add("visible");
 
-  questionContainer.classList.remove("visible");
-  questionContainer.classList.add("hidden");
+  // questionContainer.classList.remove("visible");
+  // questionContainer.classList.add("hidden");
 
   //   document.getElementById("final-user").textContent = "-";
   //   document.getElementById("final-question").textContent = "-";

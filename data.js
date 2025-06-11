@@ -1,10 +1,10 @@
 // Dummy data for users
 export const userNames = [
   { id: 1, number: 1, name: "Ananda Septian" },
-  { id: 2, number: 2, name: "M. Royyan M." },
+  { id: 2, number: 2, name: "Musthofa Noven" },
   { id: 3, number: 3, name: "M. Abdillah" },
   { id: 4, number: 4, name: "M. Bresciano" },
-  { id: 5, number: 5, name: "Musthofa Noven" },
+  { id: 5, number: 5, name: "M. Royyan M." },
   { id: 6, number: 6, name: "Rafif Subah" },
   { id: 7, number: 7, name: "Reihan Maulana" },
   { id: 8, number: 8, name: "Fito Dean" },
@@ -26,17 +26,6 @@ export const userNames = [
   { id: 24, number: 24, name: "M. Nashrullah" },
   { id: 25, number: 25, name: "Raditya Valentino" },
   { id: 26, number: 26, name: "M. Farhan Fitriyanto" },
-  // { id: 8, number: 8, name: "Efitri Aulia Rahma" },
-  // { id: 9, number: 9, name: "Fitriatuz Zahra Rachman" },
-  // { id: 10, number: 10, name: "Wahyuti Kurnia Prastiwi" },
-  // { id: 11, number: 11, name: "Adinda Thalitha Feronicia" },
-  // { id: 12, number: 12, name: "Annisa Akma Nabila" },
-  // { id: 13, number: 13, name: "Farah Afsya Azkia" },
-  // { id: 14, number: 14, name: "Khoirun Nashihah" },
-  // { id: 15, number: 15, name: "Lutvia Eka Agustin" },
-  // { id: 16, number: 16, name: "Miftahul Ulumiyah Putri" },
-  // { id: 17, number: 17, name: "Resya Ruhbilliant Sugiarta" },
-  // { id: 18, number: 18, name: "Putri Afifah Nadhif Atiqah" },
 ];
 
 // Dummy data for questions
@@ -51,7 +40,7 @@ export const userQuestions = [
       'Dari Abu Hurairah Radliyallaahu anhu bahwa Rasulullah Shallallaahu alaihi wa Sallam bersabda: "Sucinya tempat air seseorang diantara kamu jika dijilat anjing ialah dengan dicuci tujuh kali, yang pertamanya dicampur dengan debu tanah." Dikeluarkan oleh Muslim. Dalam riwayat lain disebutkan: "Hendaklah ia membuang air itu." Menurut riwayat Tirmidzi: "Yang terakhir atau yang pertama (dicampur dengan debu tanah).',
   },
   {
-    id: 2,
+    id: 24,
     number: 2,
     title: "كتاب الصلاة",
 
@@ -61,7 +50,7 @@ export const userQuestions = [
       "Dari 'Aisyah Radliyallaahu 'anhu bahwa Nabi Shallallaahu 'alaihi wa Sallam mengeraskan bacaannya dalam sholat gerhana, beliau sholat empat kali ruku' dalam dua rakaat dan empat kali sujud. Muttafaq Alaihi dan lafadznya menurut Muslim. Dalam riwayat Muslim yang lain: Lalu beliau menyuruh seorang penyeru untuk menyerukan: Datanglah untuk sholat berjama'ah.",
   },
   {
-    id: 3,
+    id: 26,
     number: 3,
     title: "كتاب الطهارة",
     question:
@@ -131,14 +120,14 @@ export const userQuestions = [
     translate: "",
   },
   {
-    id: 12,
+    id: 5,
     number: 12,
     title: "",
     question: "",
     translate: "",
   },
   {
-    id: 13,
+    id: 1,
     number: 13,
     title: "",
     question: "",
@@ -166,14 +155,14 @@ export const userQuestions = [
     translate: "",
   },
   {
-    id: 17,
+    id: 3,
     number: 17,
     title: "",
     question: "",
     translate: "",
   },
   {
-    id: 18,
+    id: 20,
     number: 18,
     title: "",
     question: "",
