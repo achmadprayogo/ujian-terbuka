@@ -31,7 +31,7 @@ export const userNames = [
 // Dummy data for questions
 export const userQuestions = [
   {
-    id: 1,
+    id: 0,
     number: 1,
     title: "كتاب الطهارة",
     question:
@@ -66,7 +66,7 @@ export const userQuestions = [
     translate: `Ibnu Umar Radliyallaahu 'anhu berkata bahwa Rasulullah Shallallaahu 'alaihi wa Sallam bersabda: "Dihalalkan bagi kita dua macam bangkai dan dua macam darah. Dua macam bangkai itu adalah belalang dan ikan, sedangkan dua macam darah adalah hati dan jantung." Diriwayatkan oleh Ahmad dan Ibnu Majah, dan di dalam sanadnya ada kelemahan.`,
   },
   {
-    id: 5,
+    id: 0,
     number: 5,
     title: "كتاب الطهارة",
     question:
